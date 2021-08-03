@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/database.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav"><button class="home"><a href="/"><span class="material-icons-outlined">home</span>Home</a></button></div>
+        <div id="data">
+            <div class="item item-menu">Sr.No</div>
+            <div class="item item-menu">Name</div>
+            <div class="item item-menu">Email</div>
+            <%for(var i=data.length,j=1;i>0;i--,j++){%>
+                <div class="item"><%= j %></div>
+                <div class="item"><%= data[i-1].firstName %> <%= data[i-1].lastName %></div>
+                <div class="item"><%= data[i-1].email %></div>
+            <%}%>
+        </div>
+    </div>
+</body>
+
+</html>
