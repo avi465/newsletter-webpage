@@ -25,7 +25,7 @@ app.get("/sucess", function (req, res) {
 });
 
 app.get("/database", function (req, res) {
-    axios.get("https://newsletter-rest-api.herokuapp.com/users")
+    axios.get("https://ruby-adder-coat.cyclic.app/users")
         .then(function (response) {
             // console.log(response.data);
             res.render("database", { data: response.data });
@@ -40,7 +40,7 @@ app.get("/database", function (req, res) {
 app.post("/", function (req, res) {
     var options = {
         method: 'POST',
-        url: 'https://newsletter-rest-api.herokuapp.com/users',
+        url: 'https://ruby-adder-coat.cyclic.app/users',
         headers: {
             'content-type': "application/x-www-form-urlencoded",
         },
@@ -59,4 +59,4 @@ app.post("/", function (req, res) {
 })
 
 // server listening
-app.listen(process.env.PORT || 3000, () => console.log("server is running on port 3000"))
+app.listen(process.env.PORT || 3000, () => console.log("server is running..."))

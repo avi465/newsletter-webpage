@@ -1,39 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
     color: white;
 }
-.container{
+
+.container {
     height: max-content;
     padding: 24px;
     background-color: #161616;
-    padding-bottom: 40px;
+    padding-bottom: 75px;
 }
-#sucess{
+
+#sucess {
     text-align: center;
 }
-button{
-    padding:4px 16px;
+
+button {
+    padding: 4px 16px;
     background-color: rgb(16, 112, 255);
-    border: 1px solid white;
-    border-radius: 4px;
+    border: 1px solid gray;
+    font-size: 16px;
     margin-bottom: 30px;
+    box-shadow: rgb(92, 92, 92) 2px 2px 2px;
+    margin: 2px;
 }
-.home{
+
+.home {
     padding-top: 0px;
     padding-bottom: 8px;
 }
-button.database{
+
+button.database {
     height: 36px;
     transform: translateY(-2px);
     font-size: 16px;
+    box-shadow: rgb(184, 184, 184) 2px 2px 2px;
 }
-a{
+
+.material-icons-outlined {
+    font-size: 20px;
+}
+
+a {
     text-decoration: none;
 }
-span{
+
+span {
     margin-right: 4px;
-    transform: translateY(4px);
+    transform: translateY(6px);
 }
